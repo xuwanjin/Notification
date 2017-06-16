@@ -3,13 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.xuwanjin.notification.MainActivity">
 
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/notification_listener_service"
-        android:text="@string/notification_listener_service"
-        />
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/notification_listener_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notification_listener_service" />
+
+        <Button
+            android:id="@+id/notification_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notification_normal"
+
+            />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
