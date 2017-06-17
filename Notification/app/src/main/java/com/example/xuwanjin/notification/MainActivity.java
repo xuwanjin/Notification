@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 NotificationCompat.Builder notification = new NotificationCompat.Builder(getApplicationContext())
                         .setSmallIcon(android.R.drawable.stat_notify_sdcard_usb)
-                        .setContentText((new Random()).nextInt() + "XXXXX")
+                        .setContentText((new Random()).nextInt() + "Normal Notification")
                         .setContentTitle("Always New Notification")
                         .setDefaults(NotificationCompat.DEFAULT_LIGHTS)
                         .setWhen(0)
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 NotificationCompat.Builder updateNotification = new NotificationCompat.Builder(getApplicationContext());
                 updateNotification.setContentTitle("Update Notification")
                         .setSmallIcon(android.R.drawable.ic_popup_reminder)
-                        .setContentText(new Random().nextInt() + "YYYY")
+                        .setContentText(new Random().nextInt() + "Update Notification Content")
                         .setDefaults(NotificationCompat.DEFAULT_ALL)
                         .setPriority(NotificationCompat.PRIORITY_MAX)
                         .setCategory(NotificationCompat.CATEGORY_MESSAGE)
